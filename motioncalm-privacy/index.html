@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>멀미케어 개인정보처리방침</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* VOICE: formal, calm memo — a legal notice that reads in one minute
+   IDEA: a printed notice card handed out at a pharmacy counter
+   PICTURE: a single summary panel "수집하는 정보: 없음" up top
+   COLOUR and TYPE: white / ink, one teal field for the summary; Noto Sans KR
+   LAYOUT: one 720px column, summary first, then numbered-by-heading sections */
+:root{color-scheme:light dark;--bg:light-dark(#ffffff,#0f1716);--ink:light-dark(#142120,#e6efed);--muted:light-dark(#4a5856,#a8b8b5);--line:light-dark(#dfe7e5,#26332f);--teal:light-dark(#0f766e,#5eead4);--panel:light-dark(#0f766e,#123b37);--panelInk:#ffffff}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 "Noto Sans KR",system-ui,sans-serif;overflow-x:clip}
+main{max-width:720px;margin:0 auto;padding:clamp(28px,5vw,64px) max(5vw,18px)}
+h1{font-size:clamp(28px,5vw,38px);line-height:1.15;margin:0 0 6px;text-wrap:balance}
+.meta{color:var(--muted);font-size:14px;margin:0 0 28px}
+.summary{background:var(--panel);color:var(--panelInk);border-radius:16px;padding:24px 26px;margin-bottom:36px}
+.summary strong{display:block;font-size:24px;line-height:1.3;margin-bottom:6px}
+.summary p{margin:0;opacity:.92}
+h2{font-size:19px;margin:34px 0 8px;color:var(--teal)}
+p,li{margin:0 0 10px}
+ul{padding-left:1.2em;margin:0}
+table{width:100%;border-collapse:collapse;font-size:15px;margin-top:6px}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:700;color:var(--muted);font-size:14px}
+hr{border:0;border-top:1px solid var(--line);margin:44px 0 24px}
+.en h2{color:var(--ink)}
+.en{color:var(--muted);font-size:15px}
+@media(max-width:600px){table{font-size:14px}.stack thead{display:none}.stack tr{display:grid;padding-block:10px;border-bottom:1px solid var(--line)}.stack td{display:flow-root;border:0;padding:3px 0;padding-inline-start:6.5em;text-align:start}.stack td::before{content:attr(data-l);float:inline-start;width:6em;margin-inline-start:-6.5em;color:var(--muted);font-size:13px}}
+</style>
+<script>new MutationObserver(()=>{for(const c of document.querySelectorAll('.stack td:not([data-l])')){let i=0,p=c;while(p=p.previousElementSibling)i+=p.colSpan;c.dataset.l=c.closest('table').rows[0].cells[i]?.textContent||''}}).observe(document,{childList:true,subtree:true})</script>
+</head>
+<body>
+<main>
+  <h1>멀미케어 개인정보처리방침</h1>
+  <p class="meta">시행일 2026년 11월 22일 · 개인사업자 파스타 (대표 김도엽)</p>
+
+  <section class="summary" aria-label="요약">
+    <strong>수집하는 개인정보: 없음</strong>
+    <p>멀미케어는 광고, 회원가입, 분석 도구, 외부 서버가 없으며 인터넷 권한 자체를 요청하지 않습니다. 앱에서 만들어지는 정보는 기기 밖으로 나가지 않습니다.</p>
+  </section>
+
+  <p>개인사업자 파스타(이하 ‘회사’)는 「개인정보 보호법」에 따라 멀미케어 앱 이용자의 개인정보를 보호하고, 관련 사항을 아래와 같이 안내합니다.</p>
+
+  <h2>1. 수집·이용하는 정보</h2>
+  <p>회사는 이용자의 개인정보를 수집, 저장, 전송하거나 제3자에게 제공하지 않습니다. 따라서 개인정보의 보유기간, 제3자 제공, 처리 위탁, 국외 이전에 해당하는 사항이 없습니다.</p>
+
+  <h2>2. 기기 안에서만 쓰이는 정보</h2>
+  <ul>
+    <li><b>움직임 센서</b>(가속도·중력·자이로): 모션 큐가 켜져 있는 동안 화면의 점을 움직이는 데에만 실시간으로 쓰이며, 기록하거나 저장하지 않습니다.</li>
+    <li><b>설정값</b>(점 색상·크기·위치 등): 이용자의 기기에만 저장되며 앱을 삭제하면 함께 지워집니다.</li>
+  </ul>
+
+  <h2>3. 앱이 요청하는 권한</h2>
+  <table class="stack">
+    <thead><tr><th>권한</th><th>용도</th></tr></thead>
+    <tbody>
+      <tr><td>다른 앱 위에 표시</td><td>다른 앱을 사용하는 중에도 모션 큐 점을 띄웁니다. 점은 터치를 막지 않습니다.</td></tr>
+      <tr><td>알림</td><td>모션 큐가 실행 중임을 표시하고, 알림에서 바로 끌 수 있게 합니다.</td></tr>
+      <tr><td>포그라운드 서비스</td><td>이용자가 켠 모션 큐를 끌 때까지 유지합니다.</td></tr>
+      <tr><td>진동</td><td>호흡·지압 가이드의 단계 전환을 알립니다.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>4. 아동의 개인정보</h2>
+  <p>앱은 누구의 개인정보도 수집하지 않으므로 만 14세 미만 아동의 정보 역시 수집하지 않습니다.</p>
+
+  <h2>5. 이용자의 권리</h2>
+  <p>회사가 보관하는 이용자 정보가 없으므로 열람·정정·삭제를 요청할 대상이 없습니다. 기기에 저장된 설정값은 앱 삭제 또는 ‘설정 > 앱 > 멀미케어 > 저장공간 > 데이터 삭제’로 언제든 지울 수 있습니다.</p>
+
+  <h2>6. 방침의 변경</h2>
+  <p>방침이 바뀌면 이 페이지에 시행일과 함께 게시합니다. 개인정보를 수집하는 기능이 추가되는 경우 앱 업데이트 전에 이 방침을 먼저 고칩니다.</p>
+
+  <h2>7. 개인정보 보호책임자 및 문의</h2>
+  <table class="stack">
+    <thead><tr><th>구분</th><th>내용</th></tr></thead>
+    <tbody>
+      <tr><td>개인정보처리자</td><td>파스타 (개인사업자)</td></tr>
+      <tr><td>개인정보 보호책임자</td><td>김도엽 (대표)</td></tr>
+      <tr><td>연락처</td><td>Google Play 멀미케어 페이지의 ‘개발자 정보’에 표시된 이메일·전화번호</td></tr>
+    </tbody>
+  </table>
+  <p>개인정보 침해에 대한 신고나 상담은 개인정보침해신고센터(국번 없이 118, privacy.kisa.or.kr) 또는 개인정보 분쟁조정위원회(1833-6972, www.kopico.go.kr)에도 하실 수 있습니다.</p>
+
+  <hr>
+
+  <section class="en" lang="en">
+    <h2>Privacy Policy (English summary)</h2>
+    <p>MotionCalm (멀미케어) is provided by Pasta, a sole proprietorship represented by Doyeob Kim. It does not collect, store, transmit or share any personal data. The app has no ads, no accounts, no analytics and does not request the Internet permission.</p>
+    <p>Motion sensor readings are used on-device, in real time, only to move the on-screen cue dots, and are never recorded. App settings stay on the device and are deleted when the app is uninstalled. The overlay permission is used only to draw the motion cue dots, which do not block touches.</p>
+    <p>Privacy officer: Doyeob Kim. Contact: the developer email and phone number shown under “About the developer” on the app's Google Play page. Effective November 22, 2026.</p>
+  </section>
+</main>
+</body>
+</html>
